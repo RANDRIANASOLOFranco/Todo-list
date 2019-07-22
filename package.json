@@ -1,0 +1,17 @@
+{
+  "name": "6.list-tache",
+  "version": "1.0.0",
+  "description": "Un gestionnaire de todolist ultra basique",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RANDRIANASOLO Franco (randrianasolofranco@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-session": "^1.3.3",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  }
+}
