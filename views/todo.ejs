@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ma todolist</title>
+    <style media="screen">
+      li {list-style: none}
+      h1 {color: blue}
+    </style>
+  </head>
+  <body>
+    <h1>Ma todolist</h1>
+    <ol>
+      <% todolist.forEach(function(todo, index){%>
+        <li><a href="/todo/suprimer/<%= index %>">❌ </a><%= todo %></li>
+      <% }); %>
+    </ol>
+
+    <form class="" action="/todo/ajouter/" method="post">
+      <p>
+        <label for="newtodo">Que doit-je faire ?</label>
+        <input type="text" name="newtodo" id="newtodo" autofocus/>
+        <input type="submit"/>
+      </p>
+    </form>
+  </body>
+</html>
