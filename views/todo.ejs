@@ -10,12 +10,35 @@
             background-color: black;
             text-align: center;
         }
+        
+        ol {
+            text-decoration-style: none;
+        }
+        
+        label {
+            font-style: italic;
+            font-weight: bold;
+        }
+        
+        form {
+            text-align: center;
+        }
+        
+        .input1 {
+            width: 300px;
+            height: 25px;
+        }
+        
+        .input2 {
+            width: 70px;
+            height: 25px;
+        }
     </style>
 </head>
 
 <body>
     <h1>TodoList</h1>
-    <h3>Enter a todo Item</h3>
+    <h2>Enter a todo Item</h2>
     <ol>
         <% todolist.forEach(function(todo, index){%>
             <li><a href="/todo/suprimer/<%= index %>">❌ </a>
@@ -26,9 +49,11 @@
 
     <form class="" action="/todo/ajouter/" method="post">
         <p>
-            <label for="newtodo">Que doit-je faire ?</label>
-            <input type="text" name="newtodo" id="newtodo" autofocus/>
-            <input type="submit" />
+            <p>
+                <label for="newtodo">Que doit-je faire ?</label>
+            </p>
+            <input type="text" name="newtodo" id="newtodo" class="input1" autofocus/>
+            <input type="submit" class="input2" />
         </p>
     </form>
 </body>
